@@ -100,14 +100,14 @@ public class GeoWorker {
 
                 this.exportedAddresses.getItems().add(exportedItem);
                 this.successfullyCompleted++;
-                System.out.printf("%s - ADDING OK %d%n", this.identifier, this.successfullyCompleted);
+                //System.out.printf("%s - ADDING OK %d%n", this.identifier, this.successfullyCompleted);
             }
         } catch (IOException ex) {
             // Error
             this.completedWithErrors++;
-            System.out.printf("%s - geoCode Exception%n", this.identifier);
-            System.out.println(ex.toString());
-            System.out.printf("%s - ADDING WITH ERROR %d%n", this.identifier, this.completedWithErrors);
+            //System.out.printf("%s - geoCode Exception%n", this.identifier);
+            //System.out.println(ex.toString());
+            //System.out.printf("%s - ADDING WITH ERROR %d%n", this.identifier, this.completedWithErrors);
         }
     }
 }

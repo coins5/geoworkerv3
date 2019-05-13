@@ -4,9 +4,6 @@ import android.content.Context;
 
 import com.example.geoworkerv3.classes.GeoWorkerTransport;
 
-// import java.util.concurrent.ExecutorService;
-// import java.util.concurrent.Executors;
-
 public class Task implements Runnable {
     private String name;
     Context context;

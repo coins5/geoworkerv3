@@ -34,7 +34,6 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 System.out.println("Iniciando el transporte");
-                // new GeoWorkerTransport(context,"Transporte 1");
 
                 ArrayList<Task> tasks = new ArrayList<>();
                 int TASKS_COUNT = 10;
@@ -53,8 +52,6 @@ public class ScrollingActivity extends AppCompatActivity {
                 for (int i = 0; i < TASKS_COUNT; i++) {
                     pool.execute(tasks.get(i));
                 }
-                // pool.execute(r1);
-
 
                 // pool shutdown ( Step 4)
                 pool.shutdown();
